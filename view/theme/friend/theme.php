@@ -29,6 +29,7 @@ class FriendTheme
     <script src="view/theme/friend/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="view/theme/friend/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="view/theme/friend/bootstrap/js/bootstrap-typeahead.js"></script>';
+		$a->page['template'] = 'index';
 	}
 }
  

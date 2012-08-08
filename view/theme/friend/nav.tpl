@@ -58,9 +58,9 @@
 				</ul>
 			</div>
 
-			<!--
-			{{ if $nav.login }}<a id="nav-login-link" class="nav-login-link $nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a> {{ endif }}
+			{{ if $nav.login }}<a id="nav-login-link" class="nav-login-link $nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a>{{endif}}
 
+			<!--
 			<span id="nav-link-wrapper" >
 
 			{{ if $nav.register }}<a id="nav-register-link" class="nav-commlink $nav.register.2 $sel.register" href="$nav.register.0" title="$nav.register.3" >$nav.register.1</a>{{ endif }}
