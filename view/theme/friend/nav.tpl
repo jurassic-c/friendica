@@ -10,8 +10,7 @@
 			<span class="brand">$banner</span>
 			<div class="btn-group pull-right">
 				<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
-					<i class="icon-user"></i> $sitelocation
-					<span class="caret"></span>
+					<i class="icon-user"></i>
 				</a>
 				<ul class="dropdown-menu">
 
@@ -26,7 +25,7 @@
 				</ul>
 			</div>
 			<div class="btn-group pull-right">
-				<a  href="#" class="btn btn-navbar dropdown-toggle" data-toggle="dropdown">
+				<a  href="#" class="btn dropdown-toggle" data-toggle="dropdown">
 					<span class="icon-envelope"></span>
 				</a>
 				<ul class="dropdown-menu">

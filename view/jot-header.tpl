@@ -10,7 +10,7 @@ function initEditor(cb){
 		$("#profile-jot-text-loading").show();
 		if(plaintext == 'none') {
 			$("#profile-jot-text-loading").hide();
-			$("#profile-jot-text").css({ 'height': 200, 'color': '#000' });
+			$("#profile-jot-text").css({ 'height': 200, 'color': '#000', 'margin-bottom':'9px' });
 			$("#profile-jot-text").contact_autocomplete(baseurl+"/acl");
 			editor = true;
 			$("a#jot-perms-icon").fancybox({

@@ -15,7 +15,7 @@ class FriendTheme
 {
 	static function init(&$a) {
 		$a->page['htmlhead'] .= '<link href="view/theme/friend/bootstrap/css/bootstrap.css" rel="stylesheet">';
-		$a->page['htmlhead'] .= '<link href="view/theme/friend/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">';
+		$a->page['htmlhead'] .= '<link href="view/theme/friend/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">';
 		$a->page['footer'] .= '<script src="view/theme/friend/bootstrap/js/jquery.js"></script>
     <script src="view/theme/friend/bootstrap/js/bootstrap-transition.js"></script>
     <script src="view/theme/friend/bootstrap/js/bootstrap-alert.js"></script>

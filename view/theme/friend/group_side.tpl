@@ -11,7 +11,7 @@
 			/>
 		{{ endif }}			
 		{{ if $group.edit }}
-			<a class="groupsideedit" href="$group.edit.href" title="$edittext"><span id="edit-sidebar-group-element-$group.id" class="group-edit-icon iconspacer small-pencil"></span></a>
+			<span><a class="groupsideedit btn-mini icon-pencil" href="$group.edit.href" title="$edittext"></a><span>
 		{{ endif }}
 		<a id="sidebar-group-element-$group.id" class="sidebar-group-element {{ if $group.selected }}group-selected{{ endif }}" href="$group.href">$group.text</a>
 	</li>

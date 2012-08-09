@@ -14,3 +14,30 @@ body {
 .netsearch-box {
 	margin-top: 9px;
 }
+
+#profile-jot-desc {
+	line-height:0px;
+}
+
+#jot-text-wrap textarea {
+	width:85%;
+}
+
+.wall-item-photo-wrapper {
+	float:left;
+	margin-right: 20px;
+}
+
+.wall-item-ago {
+	float:right;
+}
+
+.wall-item-comment-wrapper {
+	display: none;
+}
+
+.wall-item-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 12px 0 8px 0;
+}
