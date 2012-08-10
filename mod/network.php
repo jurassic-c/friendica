@@ -97,12 +97,16 @@ function network_init(&$a) {
 		$a->page['content'] .= '<h2>' . t('Search Results For:') . ' '  . $search . '</h2>';
 	}
 
-	$a->page['aside'] .= group_side('network','network',true,$group_id);
-	$a->page['aside'] .= posted_date_widget($a->get_baseurl() . '/network',local_user(),false);	
-	$a->page['aside'] .= networks_widget($a->get_baseurl(true) . '/network',(x($_GET, 'nets') ? $_GET['nets'] : ''));
-	$a->page['aside'] .= saved_searches($search);
-	$a->page['aside'] .= fileas_widget($a->get_baseurl(true) . '/network',(x($_GET, 'file') ? $_GET['file'] : ''));
-
+	
+	$tpl = get_markup_template("aside.tpl");
+	$a->page['aside'] = replace_macros($tpl, array(
+		'$aside' => true,
+		'$group' => group_side('network','network',true,$group_id),
+		'$posted_date' => posted_date_widget($a->get_baseurl() . '/network',local_user(),false),	
+		'$networks' => networks_widget($a->get_baseurl(true) . '/network',(x($_GET, 'nets') ? $_GET['nets'] : '')),
+		'$search' => saved_searches($search),
+		'$fileas' => fileas_widget($a->get_baseurl(true) . '/network',(x($_GET, 'file') ? $_GET['file'] : ''))
+	));
 }
 
 function saved_searches($search) {
