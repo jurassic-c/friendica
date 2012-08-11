@@ -7,12 +7,12 @@
 </head>
 <body>
 	<?php if(x($page,'nav')) echo $page['nav']; ?>
-	<div class="container-fluid">
+	<div id="content-wrapper" class="container-fluid">
 		<div class="row-fluid">
 			<div class="span3">
-				<aside class="well sidebar-nav"><?php if(x($page,'aside')) echo $page['aside']; ?></aside>
+				<?php if(x($page,'aside')) echo $page['aside']; ?>
 			</div>
-			<div class="span6">
+			<div class="span9">
 				<section><?php if(x($page,'content')) echo $page['content']; ?>
 					<div id="page-footer"></div>
 				</section>

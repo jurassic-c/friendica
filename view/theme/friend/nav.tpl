@@ -1,6 +1,6 @@
-<nav class="navbar navbar-fixed-top">
+<nav id="main-nav" class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container-fluid">
+		<div id="navbar-inner-content" class="container-fluid">
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -8,6 +8,7 @@
 				<span class="icon-bar"></span>
 			</a>
 			<span class="brand">$banner</span>
+			{{ if $nav.logout }}
 			<div class="btn-group pull-right">
 				<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
 					<i class="icon-user"></i>
@@ -24,6 +25,9 @@
 					<li><a id="nav-logout-link" class="nav-link $nav.logout.2" href="$nav.logout.0" title="$nav.logout.3" >$nav.logout.1</a></li>{{ endif }}
 				</ul>
 			</div>
+			{{ endif }}
+			
+			{{ if $nav.messages }}
 			<div class="btn-group pull-right">
 				<a  href="#" class="btn dropdown-toggle" data-toggle="dropdown">
 					<span class="icon-envelope"></span>
@@ -39,6 +43,7 @@
 					{{ endif }}
 				</ul>
 			</div>
+			{{ endif }}
 			<div class="nav-collapse">
 				<ul class="nav">
 					{{ if $nav.network }}
@@ -54,10 +59,9 @@
 					{{ if $nav.community }}
 						<li><a id="nav-community-link" class="nav-commlink $nav.community.2 $sel.community" href="$nav.community.0" title="$nav.community.3" >$nav.community.1</a></li>
 					{{ endif }}
+			{{ if $nav.login }}<li><a id="nav-login-link" class="nav-login-link $nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a></li>{{endif}}
 				</ul>
 			</div>
-
-			{{ if $nav.login }}<a id="nav-login-link" class="nav-login-link $nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a>{{endif}}
 
 			<!--
 			<span id="nav-link-wrapper" >
