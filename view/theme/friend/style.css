@@ -71,10 +71,54 @@ a.nav-login-link {
 	border-bottom:1px solid #CCC;
 }
 
+.tread-wrapper .tread-wrapper {
+	margin-left: 2.564%;
+	border-bottom:none;
+}
+
+.thread-children .wall-item-photo-wrapper {
+	width:32px;
+	height:32px;
+}
+
+.thread-children .wall-item-content {
+	margin-left: 52px;
+	min-height: 0px;
+}
+
 .wall-item-title {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin: 12px 0 8px 0;
+}
+
+.thread-children .wall-item-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.wall-item-tools {
+	margin: 18px 0 18px 0;
+	height:32px;
+	width:100%;
+	background: #CCC;
+}
+
+.like, .dislike, .editpost, .drophide, .remote-link, .star-item, .tag-item {
+	line-height:32px;
+	display:block;
+	width:32px;
+	height: 32px;
+	margin: 9px;
+}
+
+.like, .dislike, .remote-link, .star-item, .tag-item {
+	float: left;
+}
+
+.editpost, .drophide {
+	float: right;
 }
 
 .hide-commentbox {
